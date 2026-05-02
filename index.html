@@ -43,18 +43,26 @@ class="bg-blue-600 text-white px-6 py-3 rounded-lg">
         Get admission, visa support, and expert guidance for Germany, Canada, UK and more.
       </p>
 
-      <div class="flex gap-4">
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
-class="bg-blue-600 text-white px-6 py-3 rounded-lg">
-  Book Free Consultation
-</button>
-        <!-- <button class="border px-6 py-3 rounded-lg">
-          Check Eligibility
-        </button> -->
-        <a href="eligibility.html" class="border px-6 py-3 rounded-lg inline-block text-center">
-  Check Eligibility
-</a>
-      </div>
+      <div class="mt-6">
+
+  <!-- Toggle Container -->
+  <div class="flex bg-gray-200 p-1 rounded-lg w-fit">
+    
+    <button id="btnConsult"
+      onclick="setActive('consult')"
+      class="px-5 py-2 rounded-md bg-blue-600 text-white font-medium transition">
+      Book Consultation
+    </button>
+
+    <button id="btnEligibility"
+      onclick="setActive('eligibility')"
+      class="px-5 py-2 rounded-md text-gray-700 font-medium transition">
+      Check Eligibility
+    </button>
+
+  </div>
+
+</div>
 
       <div class="mt-6 text-sm text-gray-500">
         ✔ 95% Visa Success | ✔ 500+ Students
@@ -187,9 +195,65 @@ class="bg-blue-600 text-white px-6 py-3 rounded-lg">
 </section>
 
 <!-- 🔚 Footer -->
-<footer class="bg-black text-white py-6 text-center">
-  <p>© 2026 GlobalEdu. All rights reserved.</p>
+<footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+    <!-- 🔷 Brand -->
+    <div>
+      <h2 class="text-xl font-bold text-white mb-4">EduvionGlobal</h2>
+      <p class="text-sm">
+        Helping students achieve their dream of studying abroad with expert guidance and visa support.
+      </p>
+    </div>
+
+    <!-- 🔗 Quick Links -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="#countries" class="hover:text-white">Countries</a></li>
+        <li><a href="#services" class="hover:text-white">Services</a></li>
+        <li><a href="eligibility.html" class="hover:text-white">Check Eligibility</a></li>
+      </ul>
+    </div>
+
+    <!-- 🌍 Services -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Admission Assistance</li>
+        <li>Visa Processing</li>
+        <li>SOP Writing</li>
+        <li>Interview Preparation</li>
+      </ul>
+    </div>
+
+    <!-- 📞 Contact Info -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+      <ul class="space-y-2 text-sm">
+        <li>📍 Chattogram, Bangladesh</li>
+        <li>📞 +880 1XXXXXXXXX</li>
+        <li>📧 eduvionglobal@gmail.com</li>
+      </ul>
+
+      <!-- 🌐 Social -->
+      <div class="flex gap-4 mt-4">
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">WhatsApp</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 🔚 Bottom -->
+  <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
+    © 2026 EduvionGlobal. All rights reserved.
+  </div>
 </footer>
+
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -238,5 +302,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-</script></body>
+
+</script>
+<script>
+function setActive(type) {
+  const consultBtn = document.getElementById("btnConsult");
+  const eligibilityBtn = document.getElementById("btnEligibility");
+
+  // reset styles
+  consultBtn.classList.remove("bg-blue-600", "text-white");
+  consultBtn.classList.add("text-gray-700");
+
+  eligibilityBtn.classList.remove("bg-blue-600", "text-white");
+  eligibilityBtn.classList.add("text-gray-700");
+
+  if (type === "consult") {
+    consultBtn.classList.add("bg-blue-600", "text-white");
+
+    // scroll to contact
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+
+  } else {
+    eligibilityBtn.classList.add("bg-blue-600", "text-white");
+
+    // redirect to eligibility page
+    window.location.href = "eligibility.html";
+  }
+}
+</script>
+
+
+</body>
 </html> 
