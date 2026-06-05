@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Eligibility | Eduvion Global</title>
@@ -14,279 +15,329 @@
 
 <body class="pt-20 bg-gray-50">
 
-<!-- 🔝 Navbar -->
-<nav class="bg-white shadow-md fixed w-full top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-blue-600"> <a href="index.html">EduvionGlobal</a> </h1>
-    <a href="index.html" class="text-blue-600 font-medium">Back to Home</a>
-  </div>
-</nav>
+  <!-- 🔝 Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600"> <a href="index.html">EduvionGlobal</a> </h1>
+      <a href="index.html" class="text-blue-600 font-medium">Back to Home</a>
+    </div>
+  </nav>
 
-<!-- 🧾 Page Title -->
-<section class="py-12 text-center">
-  <h1 class="text-3xl font-bold">Check Your Eligibility</h1>
-  <p class="text-gray-600 mt-2">Select your destination and study level</p>
-</section>
+  <!-- 🧾 Page Title -->
+  <section class="py-12 text-center">
+    <h1 class="text-3xl font-bold">Check Your Eligibility</h1>
+    <p class="text-gray-600 mt-2">Select your destination and study level</p>
+  </section>
 
-<!-- 🌍 Countries Section -->
-<section class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 pb-16">
+  <!-- 🌍 Countries Section -->
+  <section class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 pb-16">
 
-  <!-- 🇩🇪 Germany -->
-  <div class="p-6 bg-white shadow-lg rounded-2xl">
-    <h2 class="text-xl font-bold mb-4">Germany</h2>
+    <!-- 🇩🇪 Germany -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl">
+      <h2 class="text-xl font-bold mb-4">Germany</h2>
 
-    <!-- Honours -->
-    <div class="border rounded-lg mb-3">
-      <button onclick="toggleSection('germany-honours')" 
-        class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
-        Honours
-        <span>+</span>
-      </button>
-      <div id="germany-honours" class="hidden px-4 pb-3 text-sm text-gray-600">
-        ✔ HSC completed <br>
-        ✔ Basic German (A2/B1) <br>
-        ✔ Blocked Account Required
+      <!-- Honours -->
+      <div class="border rounded-lg mb-3">
+        <button onclick="toggleSection('germany-honours')"
+          class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
+          Honours
+          <span>+</span>
+        </button>
+        <div id="germany-honours" class="hidden px-4 pb-3 text-sm text-gray-600">
+          ✔ HSC completed <br>
+          ✔ Basic German (A2/B1) <br>
+          ✔ Blocked Account Required
+        </div>
+      </div>
+
+      <!-- Masters -->
+      <div class="border rounded-lg">
+        <button onclick="toggleSection('germany-masters')"
+          class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
+          Masters
+          <span>+</span>
+        </button>
+        <div id="germany-masters" class="hidden px-4 pb-3 text-sm text-gray-600">
+          ✔ Bachelor’s Degree <br>
+          ✔ IELTS optional <br>
+          ✔ APS Certificate
+        </div>
       </div>
     </div>
 
-    <!-- Masters -->
-    <div class="border rounded-lg">
-      <button onclick="toggleSection('germany-masters')" 
-        class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
-        Masters
-        <span>+</span>
-      </button>
-      <div id="germany-masters" class="hidden px-4 pb-3 text-sm text-gray-600">
-        ✔ Bachelor’s Degree <br>
-        ✔ IELTS optional <br>
-        ✔ APS Certificate
+    <!-- 🇨🇦 Canada -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl">
+      <h2 class="text-xl font-bold mb-4">Canada</h2>
+
+      <!-- Honours -->
+      <div class="border rounded-lg mb-3">
+        <button onclick="toggleSection('canada-honours')"
+          class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
+          Honours
+          <span>+</span>
+        </button>
+        <div id="canada-honours" class="hidden px-4 pb-3 text-sm text-gray-600">
+          ✔ HSC + IELTS <br>
+          ✔ Financial Proof <br>
+          ✔ Offer Letter
+        </div>
+      </div>
+
+      <!-- Masters -->
+      <div class="border rounded-lg">
+        <button onclick="toggleSection('canada-masters')"
+          class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
+          Masters
+          <span>+</span>
+        </button>
+        <div id="canada-masters" class="hidden px-4 pb-3 text-sm text-gray-600">
+          ✔ Bachelor’s Degree <br>
+          ✔ IELTS 6.5+ <br>
+          ✔ SOP Required
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- 🇨🇦 Canada -->
-  <div class="p-6 bg-white shadow-lg rounded-2xl">
-    <h2 class="text-xl font-bold mb-4">Canada</h2>
-
-    <!-- Honours -->
-    <div class="border rounded-lg mb-3">
-      <button onclick="toggleSection('canada-honours')" 
-        class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
-        Honours
-        <span>+</span>
-      </button>
-      <div id="canada-honours" class="hidden px-4 pb-3 text-sm text-gray-600">
-        ✔ HSC + IELTS <br>
-        ✔ Financial Proof <br>
-        ✔ Offer Letter
-      </div>
-    </div>
-
-    <!-- Masters -->
-    <div class="border rounded-lg">
-      <button onclick="toggleSection('canada-masters')" 
-        class="w-full text-left px-4 py-3 font-medium flex justify-between items-center hover:bg-gray-100">
-        Masters
-        <span>+</span>
-      </button>
-      <div id="canada-masters" class="hidden px-4 pb-3 text-sm text-gray-600">
-        ✔ Bachelor’s Degree <br>
-        ✔ IELTS 6.5+ <br>
-        ✔ SOP Required
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
 
 
   <!-- CV Assessment & Profile Review -->
-<section id="cv" class="bg-gray-100 min-h-screen flex items-center justify-center py-16">
+  <section id="cv" class="bg-gray-100 min-h-screen flex items-center justify-center py-16">
 
-  <div class="w-full max-w-4xl px-6">
+    <div class="w-full max-w-4xl px-6">
 
-    <!-- Card -->
-    <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
+      <!-- Card -->
+      <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
 
-      <h2 class="text-3xl font-bold mb-3">
-        CV Assessment & Profile Review
-      </h2>
+        <h2 class="text-3xl font-bold mb-3">
+          CV Assessment & Profile Review
+        </h2>
 
-      <p class="text-gray-600 mb-8">
-        Upload your CV and get free eligibility evaluation
-      </p>
-
-      <form id="cvForm" class="grid gap-4">
-
-        <input name="name" type="text" placeholder="Name"
-          class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
-
-        <input name="email" type="email" placeholder="Email"
-          class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
-
-        <input name="phone" type="text" placeholder="Phone"
-          class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
-
-        <select name="country"
-          class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
-          <option>Select Country</option>
-          <option>Germany</option>
-          <option>Canada</option>
-          <option>UK</option>
-          <option>Australia</option>
-        </select>
-
-        <input type="file" id="fileInput"
-          class="p-3 border rounded bg-gray-50" required>
-
-        <button type="submit"
-          class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
-          Upload CV
-        </button>
-
-        <p id="cvSuccessMsg" class="hidden text-green-600 font-semibold mt-3">
-          ✅ CV uploaded successfully!
+        <p class="text-gray-600 mb-8">
+          Upload your CV and get free eligibility evaluation
         </p>
 
-      </form>
+        <form id="cvForm" class="grid gap-4">
 
-    </div>
+          <input name="name" type="text" placeholder="Name"
+            class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
 
-  </div>
+          <input name="email" type="email" placeholder="Email"
+            class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
 
-</section>
+          <input name="phone" type="text" placeholder="Phone"
+            class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
 
+          <select name="country" class="p-3 border rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
+            <option>Select Country</option>
+            <option>Germany</option>
+            <option>Canada</option>
+            <option>UK</option>
+            <option>Australia</option>
+          </select>
 
+          <input type="file" id="fileInput" class="p-3 border rounded bg-gray-50" required>
 
+          <button type="submit" class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+            Upload CV
+          </button>
 
-<!-- ⚙️ Script -->
-<script>
-//   document.getElementById("cvForm").addEventListener("submit", function (e) {
-//   e.preventDefault();
+          <p id="cvSuccessMsg" class="hidden text-green-600 font-semibold mt-3">
+            ✅ CV uploaded successfully!
+          </p>
 
-//   const fileInput = document.getElementById("fileInput");
-//   const file = fileInput.files[0];
+        </form>
 
-//   if (!file) return alert("Please select a file");
-
-//   const reader = new FileReader();
-
-//   reader.onload = async function () {
-
-//     const data = {
-//       name: document.querySelector("[name='name']").value,
-//       email: document.querySelector("[name='email']").value,
-//       phone: document.querySelector("[name='phone']").value,
-//       country: document.querySelector("[name='country']").value,
-//       fileName: file.name,
-//       fileData: reader.result.split(",")[1]
-//     };
-
-//     // const response = await fetch("https://script.google.com/macros/s/AKfycbyXOkmeHPwDlRQizaVD8ZhEicdEYlWk3nRj5Xvrqr0G-QsG-mKGKHWrumaEh0qs053B/exec", {
-//     //   method: "POST",
-//     //   headers: {
-//     //     "Content-Type": "application/json"
-//     //   },
-//     //   body: JSON.stringify(data)
-//     // });
-//     fetch("https://script.google.com/macros/s/AKfycbzi0gquJPabmOJqAUxi88dj9l_bXV-RwbcX69iqb2s95suB-GjqtD7jEdYtKYXl6vXf/exec", {
-//   method: "POST",
-//   body: JSON.stringify(data)
-// });
-
-//     const text = await response.text();
-//     const result = JSON.parse(text);
-
-//     if (result.status === "success") {
-//       document.getElementById("cvSuccessMsg").classList.remove("hidden");
-//       document.getElementById("cvForm").reset();
-//     } else {
-//       alert("Upload failed!");
-//       console.log(result);
-//     }
-//   };
-
-//   reader.readAsDataURL(file);
-// });
-
-function toggleSection(id) {
-  const section = document.getElementById(id);
-
-  // close all sections
-  document.querySelectorAll('[id*="honours"], [id*="masters"]').forEach(el => {
-    if (el.id !== id) el.classList.add("hidden");
-  });
-
-  // toggle selected
-  section.classList.toggle("hidden");
-}
-
-</script>
-
-
-<!-- 🔚 Footer -->
-<footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-
-    <!-- 🔷 Brand -->
-    <div>
-      <h2 class="text-xl font-bold text-white mb-4"> 
-      <a href="index.html">EduvionGlobal</a>  
-      </h2>
-      <p class="text-sm">
-        Helping students achieve their dream of studying abroad with expert guidance and visa support.
-      </p>
-    </div>
-
-    <!-- 🔗 Quick Links -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#home" class="hover:text-white">Home</a></li>
-        <li><a href="#countries" class="hover:text-white">Countries</a></li>
-        <li><a href="#services" class="hover:text-white">Services</a></li>
-        <li><a href="eligibility.html" class="hover:text-white">Check Eligibility</a></li>
-      </ul>
-    </div>
-
-    <!-- 🌍 Services -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Services</h3>
-      <ul class="space-y-2 text-sm">
-        <li>Admission Assistance</li>
-        <li>Visa Processing</li>
-        <li>SOP Writing</li>
-        <li>Interview Preparation</li>
-      </ul>
-    </div>
-
-    <!-- 📞 Contact Info -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Contact Us</h3>
-      <ul class="space-y-2 text-sm">
-        <li>📍 Chattogram, Bangladesh</li>
-        <li>📞 +880 1XXXXXXXXX</li>
-        <li>📧 eduvionglobal@gmail.com</li>
-      </ul>
-
-      <!-- 🌐 Social -->
-      <div class="flex gap-4 mt-4">
-        <a href="#" class="hover:text-white">Facebook</a>
-        <a href="#" class="hover:text-white">WhatsApp</a>
-        <a href="#" class="hover:text-white">LinkedIn</a>
       </div>
+
     </div>
 
-  </div>
+  </section>
 
-  <!-- 🔚 Bottom -->
-  <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
-    © 2026 EduvionGlobal. All rights reserved.
-  </div>
-</footer>
+
+
+
+  <!-- ⚙️ Script -->
+  <script>
+    //   document.getElementById("cvForm").addEventListener("submit", function (e) {
+    //   e.preventDefault();
+
+    //   const fileInput = document.getElementById("fileInput");
+    //   const file = fileInput.files[0];
+
+    //   if (!file) return alert("Please select a file");
+
+    //   const reader = new FileReader();
+
+    //   reader.onload = async function () {
+
+    //     const data = {
+    //       name: document.querySelector("[name='name']").value,
+    //       email: document.querySelector("[name='email']").value,
+    //       phone: document.querySelector("[name='phone']").value,
+    //       country: document.querySelector("[name='country']").value,
+    //       fileName: file.name,
+    //       fileData: reader.result.split(",")[1]
+    //     };
+
+    //     // const response = await fetch("https://script.google.com/macros/s/AKfycbyXOkmeHPwDlRQizaVD8ZhEicdEYlWk3nRj5Xvrqr0G-QsG-mKGKHWrumaEh0qs053B/exec", {
+    //     //   method: "POST",
+    //     //   headers: {
+    //     //     "Content-Type": "application/json"
+    //     //   },
+    //     //   body: JSON.stringify(data)
+    //     // });
+    //     fetch("https://script.google.com/macros/s/AKfycbzi0gquJPabmOJqAUxi88dj9l_bXV-RwbcX69iqb2s95suB-GjqtD7jEdYtKYXl6vXf/exec", {
+    //   method: "POST",
+    //   body: JSON.stringify(data)
+    // });
+
+    //     const text = await response.text();
+    //     const result = JSON.parse(text);
+
+    //     if (result.status === "success") {
+    //       document.getElementById("cvSuccessMsg").classList.remove("hidden");
+    //       document.getElementById("cvForm").reset();
+    //     } else {
+    //       alert("Upload failed!");
+    //       console.log(result);
+    //     }
+    //   };
+
+    //   reader.readAsDataURL(file);
+    // });
+
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+
+      // close all sections
+      document.querySelectorAll('[id*="honours"], [id*="masters"]').forEach(el => {
+        if (el.id !== id) el.classList.add("hidden");
+      });
+
+      // toggle selected
+      section.classList.toggle("hidden");
+    }
+
+  </script>
+
+
+  <script>
+    document.getElementById("cvForm").addEventListener("submit", async function (e) {
+
+      e.preventDefault();
+
+      try {
+
+        const fileInput = document.getElementById("fileInput");
+
+        if (!fileInput.files[0]) {
+          alert("Please select a CV");
+          return;
+        }
+
+        const formData = new FormData();
+
+        formData.append("cv", fileInput.files[0]);
+
+        const response = await fetch("http://localhost:3000/upload", {
+          method: "POST",
+          body: formData
+        });
+
+        const result = await response.json();
+
+        console.log(result);
+
+        if (result.success) {
+
+          document.getElementById("cvSuccessMsg")
+            .classList.remove("hidden");
+
+          document.getElementById("cvForm").reset();
+
+        } else {
+
+          alert("Upload failed");
+
+        }
+
+      } catch (error) {
+
+        console.log(error);
+
+        alert("Server error or backend not running");
+
+      }
+
+    });
+  </script>
+
+  <!-- 🔚 Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+      <!-- 🔷 Brand -->
+      <div>
+        <h2 class="text-xl font-bold text-white mb-4">
+          <a href="index.html">EduvionGlobal</a>
+        </h2>
+        <p class="text-sm">
+          Helping students achieve their dream of studying abroad with expert guidance and visa support.
+        </p>
+      </div>
+
+      <!-- 🔗 Quick Links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#countries" class="hover:text-white">Countries</a></li>
+          <li><a href="#services" class="hover:text-white">Services</a></li>
+          <li><a href="eligibility.html" class="hover:text-white">Check Eligibility</a></li>
+        </ul>
+      </div>
+
+      <!-- 🌍 Services -->
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Admission Assistance</li>
+          <li>Visa Processing</li>
+          <li>SOP Writing</li>
+          <li>Interview Preparation</li>
+        </ul>
+      </div>
+
+      <!-- 📞 Contact Info -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+        <ul class="space-y-2 text-sm">
+          <li>📍 Chattogram, Bangladesh</li>
+          <li>📞 +880 1XXXXXXXXX</li>
+          <li>📧 eduvionglobal@gmail.com</li>
+        </ul>
+
+        <!-- 🌐 Social -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-white">Facebook</a>
+          <a href="#" class="hover:text-white">WhatsApp</a>
+          <a href="#" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 🔚 Bottom -->
+    <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
+      © 2026 EduvionGlobal. All rights reserved.
+    </div>
+  </footer>
 
 
 </body>
+
 </html>
