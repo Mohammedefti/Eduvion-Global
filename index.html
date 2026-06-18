@@ -2,9 +2,11 @@
 <html lang="en">
 
 <style>
-html{
-scroll-behavior:smooth;
-}</style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,324 +16,340 @@ scroll-behavior:smooth;
 
 <body class="font-sans pt-20">
 
-<!-- 🔝 Navbar -->
-<nav class="bg-white shadow-md fixed w-full top-0 z-50">  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-blue-600">EduvionGlobal</h1>
-    <div class="space-x-6 hidden md:flex">
-      <a href="#home" class="hover:text-blue-600">Home</a>
-      <a href="#countries" class="hover:text-blue-600">Countries </a>
-      <a href="#services" class="hover:text-blue-600">Services</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
-    </div>
-    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
-class="bg-blue-600 text-white px-6 py-3 rounded-lg">
-  Book Free Consultation
-</button>
-  </div>
-</nav>
-
-<!-- 🔥 Hero Section -->
-<section id ="home" class="bg-gray-100 py-16">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
-    
-    <div class="md:w-1/2">
-      <h1 class="text-4xl font-bold mb-4">
-        <!-- here should now remove -->
-        Study Abroad  Made Easy 
-      </h1>
-      <p class="text-gray-600 mb-6">
-        Get admission, visa support, and expert guidance for Germany, Canada, UK and more.
-      </p>
-
-      <div class="mt-6">
-
-  <!-- Toggle Container -->
-  <div class="flex bg-gray-200 gap-4 p-1 rounded-lg w-fit">
-    
-    <button id="btnConsult"
-      onclick="setActive('consult')"
-      class="px-6 py-3 rounded-md bg-blue-600 text-white font-medium transition">
-      Book Free Consultation
-    </button>
-
-    <button id="btnEligibility"
-      onclick="setActive('eligibility')"
-      class="px-5 py-2 rounded-md text-gray-700 font-medium transition">
-      Check Eligibility
-    </button>
-
-  </div>
-
-</div>
-
-      <div class="mt-6 text-sm text-gray-500">
-        ✔ 95% Visa Success | ✔ 500+ Students
+  <!-- 🔝 Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">EduvionGlobal</h1>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#countries" class="hover:text-blue-600">Countries </a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+        Book Free Consultation
+      </button>
     </div>
+  </nav>
 
-    <div class="md:w-1/2 mt-8 md:mt-0">
-      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="rounded-xl shadow-lg">
-    </div>
+  <!-- 🔥 Hero Section -->
+  <section id="home" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
 
-  </div>
-</section>
+      <div class="md:w-1/2">
+        <h1 class="text-4xl font-bold mb-4">
+          <!-- here should now remove -->
+          Study Abroad Made Easy
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Get admission, visa support, and expert guidance for Germany, Canada, UK and more.
+        </p>
 
-<!-- 🌍 Countries -->
-<section id="countries" class="py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Popular Study Destinations</h2>
+        <div class="mt-6">
 
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="p-6 shadow rounded-xl">
-        <h3 class="font-bold text-lg">Germany</h3>
-        <p class="text-sm mt-2">Low tuition, IELTS optional</p>
+          <!-- Toggle Container -->
+          <div class="flex bg-gray-200 gap-4 p-1 rounded-lg w-fit">
+
+            <button id="btnConsult" onclick="setActive('consult')"
+              class="px-6 py-3 rounded-md bg-blue-600 text-white font-medium transition">
+              Book Free Consultation
+            </button>
+
+            <button id="btnEligibility" onclick="setActive('eligibility')"
+              class="px-5 py-2 rounded-md text-gray-700 font-medium transition">
+              Check Eligibility
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="mt-6 text-sm text-gray-500">
+          ✔ 95% Visa Success | ✔ 500+ Students
+        </div>
       </div>
 
-      <div class="p-6 shadow rounded-xl">
-        <h3 class="font-bold text-lg">Canada</h3>
-        <p class="text-sm mt-2">PR opportunities</p>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="rounded-xl shadow-lg">
       </div>
 
-      <div class="p-6 shadow rounded-xl">
-        <h3 class="font-bold text-lg">UK</h3>
-        <p class="text-sm mt-2">1-year Masters</p>
-      </div>
-
-      <div class="p-6 shadow rounded-xl">
-        <h3 class="font-bold text-lg">Australia</h3>
-        <p class="text-sm mt-2">Work while studying</p>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 🧭 Process -->
-<section class="bg-gray-100 py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Process</h2>
+  <!-- 🌍 Countries -->
+  <section id="countries" class="py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Popular Study Destinations</h2>
 
-    <div class="grid md:grid-cols-6 gap-4 text-sm">
-      <div>Consultation</div>
-      <div>University Selection</div>
-      <div>Documents</div>
-      <div>Application</div>
-      <div>Visa</div>
-      <div>Fly ✈️</div>
-    </div>
-  </div>
-</section>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 shadow rounded-xl">
+          <h3 class="font-bold text-lg">Germany</h3>
+          <p class="text-sm mt-2">Low tuition, IELTS optional</p>
+        </div>
 
-<!-- 🎓 Services -->
-<section id="services" class="py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+        <div class="p-6 shadow rounded-xl">
+          <h3 class="font-bold text-lg">Canada</h3>
+          <p class="text-sm mt-2">PR opportunities</p>
+        </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 shadow rounded-xl">Admission Assistance</div>
-      <div class="p-6 shadow rounded-xl">Visa Processing</div>
-      <div class="p-6 shadow rounded-xl">SOP Writing</div>
-      <div class="p-6 shadow rounded-xl">Scholarship Help</div>
-      <div class="p-6 shadow rounded-xl">Interview Prep</div>
-      <div class="p-6 shadow rounded-xl">Career Guidance</div>
-    </div>
-  </div>
-</section>
+        <div class="p-6 shadow rounded-xl">
+          <h3 class="font-bold text-lg">UK</h3>
+          <p class="text-sm mt-2">1-year Masters</p>
+        </div>
 
-<!-- 📊 Stats -->
-<section class="bg-blue-600 text-white py-16 text-center">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
-    <div><h3 class="text-3xl font-bold">500+</h3><p>Students</p></div>
-    <div><h3 class="text-3xl font-bold">95%</h3><p>Visa Success</p></div>
-    <div><h3 class="text-3xl font-bold">50+</h3><p>Universities</p></div>
-    <div><h3 class="text-3xl font-bold">5+</h3><p>Years</p></div>
-  </div>
-</section>
-
-<!-- 💬 Testimonials -->
-<section class="py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Success Stories</h2>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 shadow rounded-xl">
-        <p>"Got my Germany visa easily!"</p>
-        <h4 class="mt-4 font-bold">Rahim</h4>
-      </div>
-      <div class="p-6 shadow rounded-xl">
-        <p>"Very helpful agency."</p>
-        <h4 class="mt-4 font-bold">Karim</h4>
-      </div>
-      <div class="p-6 shadow rounded-xl">
-        <p>"Highly recommended!"</p>
-        <h4 class="mt-4 font-bold">Ayesha</h4>
+        <div class="p-6 shadow rounded-xl">
+          <h3 class="font-bold text-lg">Australia</h3>
+          <p class="text-sm mt-2">Work while studying</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 📥 Contact Form -->
-<section id="contact" class="bg-gray-100 py-16">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Get Free Consultation</h2>
+  <!-- 🧭 Process -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Process</h2>
 
-    <form id= "leadForm" class="grid gap-4">
-      <input name="name" type="text" placeholder="Name" class="p-3 border rounded" required>
-      <input name="email" type="email" placeholder="Email" class="p-3 border rounded" required>
-      <input name="phone" type="text" placeholder="Phone" class="p-3 border rounded" required>
-      <select name="country" class="p-3 border rounded" required>
-        <option>Select Country</option>
-        <option>Germany</option>
-        <option>Canada</option>
-      </select>
-
-      <button id="submitBtn" type="submit" class="bg-blue-600 text-white py-3 rounded-lg">
-  Submit
-</button>
-<p id="successMsg" class="hidden text-green-600 font-semibold mt-3">
-  ✅ Your form has been submitted successfully!
-</p>
-    </form>
-  </div>
-</section>
-
-<!-- 🔚 Footer -->
-<footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-
-    <!-- 🔷 Brand -->
-    <div>
-      <h2 class="text-xl font-bold text-white mb-4">
-        <a href="#home">EduvionGlobal</a></h2>
-      <p class="text-sm">
-        Helping students achieve their dream of studying abroad with expert guidance and visa support.
-      </p>
-    </div>
-
-    <!-- 🔗 Quick Links -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#home" class="hover:text-white">Home</a></li>
-        <li><a href="#countries" class="hover:text-white">Countries</a></li>
-        <li><a href="#services" class="hover:text-white">Services</a></li>
-        <li><a href="eligibility.html" class="hover:text-white">Check Eligibility</a></li>
-      </ul>
-    </div>
-
-    <!-- 🌍 Services -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Services</h3>
-      <ul class="space-y-2 text-sm">
-        <li>Admission Assistance</li>
-        <li>Visa Processing</li>
-        <li>SOP Writing</li>
-        <li>Interview Preparation</li>
-      </ul>
-    </div>
-
-    <!-- 📞 Contact Info -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Contact Us</h3>
-      <ul class="space-y-2 text-sm">
-        <li>📍 Chattogram, Bangladesh</li>
-        <li>📞 +880 1XXXXXXXXX</li>
-        <li>📧 eduvionglobal@gmail.com</li>
-      </ul>
-
-      <!-- 🌐 Social -->
-      <div class="flex gap-4 mt-4">
-        <a href="#" class="hover:text-white">Facebook</a>
-        <a href="#" class="hover:text-white">WhatsApp</a>
-        <a href="#" class="hover:text-white">LinkedIn</a>
+      <div class="grid md:grid-cols-6 gap-4 text-sm">
+        <div>Consultation</div>
+        <div>University Selection</div>
+        <div>Documents</div>
+        <div>Application</div>
+        <div>Visa</div>
+        <div>Fly ✈️</div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <!-- 🎓 Services -->
+  <section id="services" class="py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Services</h2>
 
-  <!-- 🔚 Bottom -->
-  <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
-    © 2026 EduvionGlobal. All rights reserved.
-  </div>
-</footer>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 shadow rounded-xl">Admission Assistance</div>
+        <div class="p-6 shadow rounded-xl">Visa Processing</div>
+        <div class="p-6 shadow rounded-xl">SOP Writing</div>
+        <div class="p-6 shadow rounded-xl">Scholarship Help</div>
+        <div class="p-6 shadow rounded-xl">Interview Prep</div>
+        <div class="p-6 shadow rounded-xl">Career Guidance</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📊 Stats -->
+  <section class="bg-blue-600 text-white py-16 text-center">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+      <div>
+        <h3 class="text-3xl font-bold">500+</h3>
+        <p>Students</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold">95%</h3>
+        <p>Visa Success</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold">50+</h3>
+        <p>Universities</p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold">5+</h3>
+        <p>Years</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Testimonials -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Success Stories</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 shadow rounded-xl">
+          <p>"Got my Germany visa easily!"</p>
+          <h4 class="mt-4 font-bold">Rahim</h4>
+        </div>
+        <div class="p-6 shadow rounded-xl">
+          <p>"Very helpful agency."</p>
+          <h4 class="mt-4 font-bold">Karim</h4>
+        </div>
+        <div class="p-6 shadow rounded-xl">
+          <p>"Highly recommended!"</p>
+          <h4 class="mt-4 font-bold">Ayesha</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📥 Contact Form -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Get Free Consultation</h2>
+
+      <form id="leadForm" class="grid gap-4">
+        <input name="name" type="text" placeholder="Name" class="p-3 border rounded" required>
+        <input name="email" type="email" placeholder="Email" class="p-3 border rounded" required>
+        <input name="phone" type="text" placeholder="Phone" class="p-3 border rounded" required>
+        <select name="country" class="p-3 border rounded" required>
+          <option>Select Country</option>
+          <option>Germany</option>
+          <option>Canada</option>
+        </select>
+
+        <button id="submitBtn" type="submit" class="bg-blue-600 text-white py-3 rounded-lg">
+          Submit
+        </button>
+        <p id="successMsg" class="hidden text-green-600 font-semibold mt-3">
+          ✅ Your form has been submitted successfully!
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔚 Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+      <!-- 🔷 Brand -->
+      <div>
+        <h2 class="text-xl font-bold text-white mb-4">
+          <a href="#home">EduvionGlobal</a>
+        </h2>
+        <p class="text-sm">
+          Helping students achieve their dream of studying abroad with expert guidance and visa support.
+        </p>
+      </div>
+
+      <!-- 🔗 Quick Links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#countries" class="hover:text-white">Countries</a></li>
+          <li><a href="#services" class="hover:text-white">Services</a></li>
+          <li><a href="eligibility.html" class="hover:text-white">Check Eligibility</a></li>
+        </ul>
+      </div>
+
+      <!-- 🌍 Services -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Admission Assistance</li>
+          <li>Visa Processing</li>
+          <li>SOP Writing</li>
+          <li>Interview Preparation</li>
+        </ul>
+      </div>
+
+      <!-- 📞 Contact Info -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+        <ul class="space-y-2 text-sm">
+          <li>📍 Chattogram, Bangladesh</li>
+          <li>📞 +880 1XXXXXXXXX</li>
+          <li>📧 eduvionglobal@gmail.com</li>
+        </ul>
+
+        <!-- 🌐 Social -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-white">Facebook</a>
+          <a href="#" class="hover:text-white">WhatsApp</a>
+          <a href="#" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 🔚 Bottom -->
+    <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4">
+      © 2026 EduvionGlobal. All rights reserved.
+    </div>
+  </footer>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-  const form = document.getElementById("leadForm");
-  const successMsg = document.getElementById("successMsg");
-  const submitBtn = document.getElementById("submitBtn");
+      const form = document.getElementById("leadForm");
+      const successMsg = document.getElementById("successMsg");
+      const submitBtn = document.getElementById("submitBtn");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    // UI: loading state
-    submitBtn.disabled = true;
-    //submitBtn.innerText = "Submitting...";
+        // UI: loading state
+        submitBtn.disabled = true;
+        //submitBtn.innerText = "Submitting...";
 
-    fetch("https://script.google.com/macros/s/AKfycbxOhDm9XTuOiDMq8Kt9MfO3p2jj8n3__kMcjmEKWdxJQgxrkUfHBLuBCkm3R1X27I_n/exec", {
-      method: "POST",
-      body: JSON.stringify({
-        name: form.name.value,
-        email: form.email.value,
-        phone: form.phone.value,
-        country: form.country.value
-      })
-    })
-    .then(data => {
-  console.log("Success:", data);
+        //check in another account 
+        // fetch("https://script.google.com/macros/s/AKfycbxOhDm9XTuOiDMq8Kt9MfO3p2jj8n3__kMcjmEKWdxJQgxrkUfHBLuBCkm3R1X27I_n/exec", {
+        //from real account 
+        fetch("https://script.google.com/macros/s/AKfycbyJ7CVxj7ahizMEdeN-lV6ZDr6wMqaQafWT6F9TT2BPVk0R_vlpVLQDvWdsLHYJ-HY/exec", {
+          method: "POST",
+          body: JSON.stringify({
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            country: form.country.value
+          })
+        })
+          .then(data => {
+            console.log("Success:", data);
 
-  // clear inputs
-  form.reset();
+            // clear inputs
+            form.reset();
 
-  // show success message
-  document.getElementById("successMsg").classList.remove("hidden");
+            // show success message
+            document.getElementById("successMsg").classList.remove("hidden");
 
-  // hide after 3 seconds
-  setTimeout(() => {
-    document.getElementById("successMsg").classList.add("hidden");
-  }, 3000);
-})
-    .catch(err => {
-      console.log("Error:", err);
+            // hide after 3 seconds
+            setTimeout(() => {
+              document.getElementById("successMsg").classList.add("hidden");
+            }, 3000);
+          })
+          .catch(err => {
+            console.log("Error:", err);
 
 
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Submit";
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+          });
+
+      });
+
     });
 
-  });
+  </script>
+  <script>
+    function setActive(type) {
+      const consultBtn = document.getElementById("btnConsult");
+      const eligibilityBtn = document.getElementById("btnEligibility");
 
-});
+      // reset styles
+      consultBtn.classList.remove("bg-blue-600", "text-white");
+      consultBtn.classList.add("text-gray-700");
 
-</script>
-<script>
-function setActive(type) {
-  const consultBtn = document.getElementById("btnConsult");
-  const eligibilityBtn = document.getElementById("btnEligibility");
+      eligibilityBtn.classList.remove("bg-blue-600", "text-white");
+      eligibilityBtn.classList.add("text-gray-700");
 
-  // reset styles
-  consultBtn.classList.remove("bg-blue-600", "text-white");
-  consultBtn.classList.add("text-gray-700");
+      if (type === "consult") {
+        consultBtn.classList.add("bg-blue-600", "text-white");
 
-  eligibilityBtn.classList.remove("bg-blue-600", "text-white");
-  eligibilityBtn.classList.add("text-gray-700");
+        // scroll to contact
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 
-  if (type === "consult") {
-    consultBtn.classList.add("bg-blue-600", "text-white");
+      } else {
+        eligibilityBtn.classList.add("bg-blue-600", "text-white");
 
-    // scroll to contact
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-
-  } else {
-    eligibilityBtn.classList.add("bg-blue-600", "text-white");
-
-    // redirect to eligibility page
-    window.location.href = "eligibility.html";
-  }
-}
-</script>
+        // redirect to eligibility page
+        window.location.href = "eligibility.html";
+      }
+    }
+  </script>
 
 
 </body>
-</html> 
+
+</html>
